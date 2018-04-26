@@ -76,7 +76,7 @@ int TLVServer::Startup(void)
 int TLVServer::HandleConnections()
 {
     struct sockaddr_in clientAddress;
-    auto clientAddressLength = sizeof(clientAddress);
+    int clientAddressLength;
 	fd_set ReadFds;
     
 	for (;;)
