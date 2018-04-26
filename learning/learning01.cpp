@@ -47,10 +47,10 @@ string CLearning::longestPalindrome(string s)
 //
 bool CLearning::check_int(int x)
 {
-	auto prod = 1, sum = 0, temp = 0;
+	auto prod = 1, sum = 0;
 	do
 	{
-		temp = static_cast<int>(x - trunc(x / 10) * 10);
+		auto temp = static_cast<int>(x - trunc(x / 10) * 10);
 
 		prod *= temp;
 		sum += temp;
