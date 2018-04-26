@@ -436,7 +436,7 @@ double CLearning::findMedianSortedArrays0(vector<int>& nums1, vector<int>& nums2
 	auto pos2 = 0;
 	auto sum = 0.0;
 	auto second = false;
-	while (1 != 0)
+	for (;;)
 	{
 		if (total_len % 2 == 0) // even number of items (x/2 +/- 1)
 		{
